@@ -15,11 +15,12 @@ import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import EmailRow from './EmailRow';
 import { db } from "./firebase";
 
+
 function EmailList() {
     const [emails, setEmails] = useState([]);
 
     useEffect(() => {
-        db.collection("emails").orderNy("timestamp", "desc").onSnapshot(snapshot => setEmails(snapshot.docs.map(doc => ({
+        db.collection("emails").orderBy("timestamp", "desc").onSnapshot(snapshot => setEmails(snapshot.docs.map(doc => ({
             id: doc.id,
             data: doc.data(),
         }))) )
@@ -59,9 +60,9 @@ function EmailList() {
             </div>
 
             <div className="emailList_sections">
-                <Section Icon={InboxIcon} title="Primary" color="yellow" selected />
+                <Section Icon={InboxIcon} title="Primary" color="orange" selected />
                 <Section Icon={PeopleIcon} title="Social" color="black" selected />
-                <Section Icon={LocalOfferIcon} title="Promoted" color="yellow" selected />
+                <Section Icon={LocalOfferIcon} title="Promoted" color="orange" selected />
             </div>
 
             <div className="emailList_List">
