@@ -1,19 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import "./EmailList.css";
 import { Checkbox, IconButton } from "@material-ui/core";
-import RedoIcon from "@material-ui/icons/Redo";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import SettingsIcon from "@material-ui/icons/Settings";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import KeyboardHideIcon from "@material-ui/icons/KeyboardHide";
-import Section from "./Section";
-import InboxIcon from "@material-ui/icons/Inbox";
-import PeopleIcon from "@material-ui/icons/People";
-import LocalOfferIcon from "@material-ui/icons/LocalOffer";
-import EmailRow from './EmailRow';
-import { db } from "./firebase";
+import {RedoIcon, MoreVertIcon, ArrowDropDownIcon, SettingsIcon, ChevronLeftIcon, ChevronRightIcon, KeyboardHideIcon, InboxIcon, PeopleIcon, LocalOfferIcon } from "@material-ui/icons";
+import { Section, EmailRow } from "../index";
+import { db } from "../../firebase";
+import "./EmailList.css";
 
 
 function EmailList() {
