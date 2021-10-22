@@ -1,6 +1,7 @@
 import React from 'react';
 import { IconButton, Checkbox } from "@material-ui/core";
-import { StarBorderOutlinedIcon, LabelImportantOutlinedIcon } from "@material-ui/icons";
+import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
+import LabelImportantOutlinedIcon from "@material-ui/icons/LabelImportantOutlined";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {selectMail} from '../../features/mailSlice';
