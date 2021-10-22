@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, IconButton } from "@material-ui/core";
-import { AddIcon, InboxIcon, StarIcon, AccessTimeIcon, LabelImportantIcon, NearMeIcon, NoteIcon, ExpandMoreIcon, PersonIcon, DuoIcon, PhoneIcon } from "@material-ui/icons";
+import { AddIcon, InboxIcon, StarIcon, LabelImportantIcon, NearMeIcon, NoteIcon, ExpandMoreIcon, PersonIcon, DuoIcon, PhoneIcon } from "@material-ui/icons";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import { useDispatch } from "react-redux";
 import { openSendMessage } from '../../features/mailSlice';
 import SidebarOption from "../index";
