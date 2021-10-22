@@ -1,6 +1,10 @@
 import React from 'react';
 import { Avatar, IconButton } from "@material-ui/core";
-import { SearchIcon, ArrowDropDownIcon, AppsIcon, NotificationsIcon, MenuIcon } from "@material-ui/icons";
+import SearchIcon from "@material-ui/icons/Search";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import AppsIcon from "@material-ui/icons/Apps";
+import MenuIcon from "@material-ui/icons/Menu";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout } from "../../features/userSlice";
 import { auth }  from "../../firebase";
