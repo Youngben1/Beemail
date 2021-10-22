@@ -1,5 +1,5 @@
 import React from 'react';
-import { CloseIcon } from "@material-ui/icons";
+import CloseIcon from "@material-ui/icons/Close";
 import { Button } from "@material-ui/core";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
