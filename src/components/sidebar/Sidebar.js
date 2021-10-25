@@ -13,7 +13,7 @@ import LabelImportantIcon from "@material-ui/icons/LabelImportant";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import { useDispatch } from "react-redux";
 import { openSendMessage } from '../../features/mailSlice';
-import SidebarOption from "../index";
+import { SidebarOption } from "../index";
 import './Sidebar.css';
 
 function Sidebar() {
